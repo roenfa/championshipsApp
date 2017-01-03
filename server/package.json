@@ -1,0 +1,10 @@
+{
+    "name": "championship-app-server-side",
+    "version": "0.0.1",
+    "description": "Championships Application",
+    "main": "server.js",
+    "dependencies": {
+        "express": "~3.x",
+        "mongoose": "latest"
+    }
+}
