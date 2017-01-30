@@ -1,0 +1,42 @@
+{
+  "server": {
+    "name": "Digital Signage 2.0",
+    "agentHost": "localhost",
+    "appPort": "4000",
+    "protocol": "http",
+    "session": {
+      "secret": "JjKxJJ7RAj2x4cp5clvHaw==",
+      "expiration": "2d"
+    },
+    "publicPath": "../public",
+    "logLevel": "DEBUG",
+    "asset": {
+      "uploadDir": "../../files",
+      "mediaPath": "media",
+      "maxFramesPerSecond": 30,
+      "imageType": "image",
+      "videoType": "video",
+      "supportedTypes": ["image/jpg", "image/jpeg", "image/png", "video/mp4"],
+      "supportedVideoExtensions": ["mp4"],
+      "supportedImageExtensions": ["jpg", "jpeg", "png"],
+      "supportedExtensions": ["jpg", "jpeg", "png", "mp4"],
+      "imageMaxSize": 50,
+      "videoMaxSize": 500
+    }
+  },
+  "cas": {
+    "host": "onelogin.jalasoft.local",
+    "port": "443",
+    "protocol": "https"
+  },
+  "user": {
+    "userName": "admin",
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "state": "active",
+    "authentication": "local",
+    "password": "admin",
+    "profile": "admin"
+  },
+  "language": "es"
+}

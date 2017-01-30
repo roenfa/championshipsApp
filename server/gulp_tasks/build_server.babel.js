@@ -5,7 +5,8 @@ import watch from 'gulp-watch';
 import gutil from 'gulp-util';
 import changed from 'gulp-changed';
 import nodemon from 'gulp-nodemon';
- const SOURCE = './server/.**/*',
+ 
+ const SOURCE = './server/**/*',
  SOURCE_JS = './server/**/*.js',
  SOURCE_IGNORE_JS = '!./server/**/*.js',
  TARGET_SERVER = './build/server';

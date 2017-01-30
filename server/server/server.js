@@ -1,11 +1,20 @@
-import express from 'express';
+import config from './config/config';
+import http from 'http';
+import App from './app';
+let httpServer;
+let app = new App(config);
 
-let app = express();
-
-app.get('/', (req, res) => {
-	res.send('Hello WOrld');
+app.loadModules()
+.then(() => {
+	httpServer = http.createServer(app.getAppServer());
+	httpServer.listen(app.getAppServer().get('port'), () => {
+		console.log('WebServer listen on the port', app.getAppServer().get('port'));
+	});
+})
+.catch((err) => {
+	console.log('Error');
+	console.error(err.message);
+    console.error(err.stack);
+    console.error('cannot up server. ');
 });
 
-app.listen(3000, () => {
-	console.log('Examples app listening on port');
-})
