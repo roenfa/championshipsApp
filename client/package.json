@@ -1,9 +1,10 @@
 {
-    "name": "championship-app-client-side",
-    "version": "0.0.1",
-    "description": "Championships Application",
-    "main": "server.js",
-    "dependencies": {
-    
-    }
+  "name": "championship-app-client-side",
+  "version": "0.0.1",
+  "description": "Championships Application",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
 }

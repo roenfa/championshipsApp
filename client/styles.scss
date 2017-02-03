@@ -1,0 +1,81 @@
+$font-color: #000;
+$font-stack: Helvetica, sans-serif;
+$font-size: 16px;
+$primary-color: #F7F7F9;
+$second-color: #F7F7F9;
+
+$get-path-to-assets : "../assets/sprites";
+
+html {
+	margin: 0;
+	border:	0;
+	padding: 0;
+}
+
+body {
+ 	font: 100% $font-stack;
+	color: $primary-color;
+}
+
+h2, h3, h4 {
+	color: $font-color;
+	padding: 0;
+	margin: 0;
+}
+
+.header-section {
+	width: auto;
+//background-color: red;
+}
+
+.navbar-login {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+.logo-link {
+	padding: 5px;
+	box-sizing: 0;
+}
+
+.nav {
+	font: 100% $font-stack;
+	font-size: $font-size;
+}
+
+.content-section {
+	width:auto;
+	height: 80%;
+//border: solid 3px blue;
+	padding: 0;
+	margin: 0;
+}
+
+.advertisements-section {
+	width: auto;
+	height: 200px;	
+//background-color: red;
+}
+
+.create-championship-section {
+	width: auto;
+	height: 200px;	
+//background-color: green;
+}
+
+#access-icon {
+    width: 20px;
+    height: 20px;
+    margin: 17px -12px 0 0;
+    display: inline-block;
+    background: url(#{$get-path-to-assets}/glyphicons-halflings.png) -162px 0;
+}
+
+#register-icon {
+    width: 20px;
+    height: 20px;
+    margin: 15px -20px 0 0;
+    display: inline-block;
+    background: url(#{$get-path-to-assets}/glyphicons-halflings.png) 0 -70px;
+}
